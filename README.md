@@ -21,7 +21,7 @@ Testing the server and client
 
 ## PROGRAM:
 server.py 
-
+```
 import socket
 
 
@@ -40,9 +40,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-
+```
 client.py 
-
+```
 import socket
 
 
@@ -59,7 +59,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 print(f"Received {data!r}")
 
 print(f"Received {data!r}")
-
+```
 ## OUTPUT:
 
 ![alt text](image.png)
